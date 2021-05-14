@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Python Documentation</title>
+</head>
+<body>
+  <nav class="sidebar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a href="#Introduction">Introduction</a></li>
+      <li><a href="#Requirements">Requirements</a></li>
+      <li><a href="#Python 3 and Python 2">Python 3 and Python 2</a></li>
+      <li><a href="#Hello World">Hello World</a></li>
+      <li><a href="#Variables">Variables</a></li>
+      <li><a href="#Declaring Variables">Declaring Variables</a></li>
+      <li><a href="#Constants">Constants</a></li>
+      <li><a href="#Data Types">Data Types</a></li>
+      <li><a href="#If else Statements">If else Statements</a></li>
+      <li><a href="#While Loops">While Loops</a></li>
+      <li><a href="#Functions">Functions</a></li>
+      <li><a href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="Introduction">
+      <header>
+        <h1>Introduction</h1>
+      </header>
+      <p>
+        Python is an interpreted, high-level and general purporse programming language.
+        Its easy syntax,  dynamic typing and versitility make it not only a powerful 
+        scripting language but also one that provides a more gentle introduction to
+        coding.
+      </p>
+      <p>
+        Python's versitility allows it to be used in various fields such as:
+      </p>
+      <ul>
+        <li>
+          Server-side development with popular web frameworks such as django and
+          flask. 
+        </li>
+        <li>
+          Data Science and Statistics wih libraries such as matplotlib, numpy,
+          pandas and tensorflow.
+        </li>
+      </ul>
+    </section>
+    <section id="Requirements">
+      <header>
+          <h1>Requirements</h1>
+      </header>
+      <p>
+        This guide assumes you have the following:
+      </p>
+      <ul>
+        <li>
+          Basic computer literacy. 
+        </li>
+        <li>
+          A text editior such as Atom, Sublime or VS Code. 
+        </li>
+        <li>
+          Brief command line exposure. 
+        </li>
+      </ul>
+    </section>
+    <section id="Python 3 and Python 2">
+      <header>
+        <h1>Python 3 and Python 2</h1>
+      </header>
+        <p>
+          Python 2 made code development process easier than earlier versions. It implemented technical details of Python Enhancement Proposal (PEP). 
+          Python 2.7 (last version in 2.x ) is no longer under development and in 2020 has been discontinued.
+        </p>
+        <p>
+          On December 2008, Python released version 3.0. This version was mainly released to fix problems which exist in Python 2. 
+          The nature of these change is such that Python 3 was incompatible with Python 2. It is backward incompatible Some features of 
+          Python 3 have been backported to Python 2.x versions to make the migration process easy in Python 3.
+        </p>
+        <p>
+          <strong>Python 2.7 has been discontinued as of July<sup>3rd</sup> 2020 and you should 
+          therefore use Python 3.9</strong>
+        </p>  
+    </section>
+    <section id="Hello World">
+      <header>
+        <h1>Hello World</h1>
+      </header>
+      <p>
+      To get started with writing Python, open your text editior and write the following code:
+      </p>
+      <div class="code-block">
+        <code>
+          print("Hellow World")
+        </code>
+      </div>
+      <p>
+        Now save your file as 'Hello_World.py' and enter <i>'python Hello_World.py'</i> into the
+        command line.  
+      </p>
+    </section>
+    <section id="Variables">
+      <header>
+        <h1>Variables</h1>
+      </header>
+      <p>
+        Variables are nothing but reserved memory locations to store values. It means that when you create a variable, 
+        you reserve some space in the memory.
+      </p>
+      <p>  
+        Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. 
+        Therefore, by assigning different data types to the variables, you can store integers, decimals or characters in these variables.
+      </p>
+    </section>
+    <section id="Declaring Variables">
+      <header>
+        <h1>Declaring Variables</h1>
+      </header>
+      <p>
+        Python variables do not need explicit declaration to reserve memory space. 
+        The declaration happens automatically when you assign a value to a variable. 
+        The equal sign (=) is used to assign values to variables.
+        The operand to the left of the '=' operator is the name of the variable and the operand to the right of the '=' operator is the value stored in the variable.
+      </p>
+      <div class="code-block">
+        <code>
+          number = 10   #Assigns an integer 10 to number<br>
+          name =  "John" #Assigns a string 'John' to name
+        </code>
+      </div>
+    </section>
+    <section id="Constants">
+      <header>
+        <h1>Constants</h1>
+      </header>
+      <p>
+        A constant is a type of variable whose value cannot be changed. 
+        It is helpful to think of constants as containers that hold information which cannot be changed later.
+      </p>
+      <div class="code-block">
+        <code>PI = 3.14    #Assigns 3.14 to constant PI</code>
+      </div>
+    </section>
+    <section id="Data Types">
+      <header>
+        <h1>Data Types</h1>
+      </header>
+      <p>
+        Data types are the classification or categorization of data items. 
+        It represents the kind of value that tells what operations can be performed on a particular data. 
+        Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+      </p>
+      <p>
+        Following are the standard data types of Python:
+      </p>
+      <ul>
+        <li>Numbers</li>
+        <li>String</li>
+        <li>List</li>
+        <li>Tuple</li>
+        <li>Dictionary</li>
+      </ul>
+    </section>
+    <section id="If else Statements">
+      <header>
+        <h1>If else statements</h1>
+      </header>
+      <p>
+        Use the if statement to execute a statement if a logical condition  is true (See the logical conditions reference the full list). 
+        Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
+      </p>
+      <div class="code-block">
+        <code>
+          money = 5.00
+          price = 3.00 <br><br>
+          if price > money: <br>
+          <span>print("The price is too expensive")</span><br>
+          else: <br>
+          <span>print("The price is cheap")</span><br>
+        </code>
+      </div>
+      <p>
+        The above block of code shows a program which will print a statement depending of the vaule of the variable 'price'.
+        If the value of price satisfies the first condition then it's print statement will be executed and the program will end. 
+        However if this condition is not satisfied then the 'else' code block will be executed instead. 
+      </p>
+      <p>
+        We can also add adtional conditions to make our code account for different scenarios using the 'elif' statement. For
+        example we can add a condition which checks to see if the variable 'money' and 'price' have the same value.
+      </p>
+      <div class="code-block">
+        <code>
+          money = 5.00 <br>
+          price = 3.00 <br><br>
+          if price > money: <br>
+          <span>print("The price is too expensive")</span><br>
+          elif price == money: <br>
+          <span>print("The price is just right")</span><br>
+          else: <br>
+          <span>print("The price is cheap")</span>
+        </code>
+      </div>
+      <p>
+        The code above is just a modification of the previous example. However this example has added an additional condition
+        which will account for the variables being equal and therefore making the program more robust. 
+      </p>
+    </section>
+    <section id="While Loops">
+      <header>
+        <h1>While Loops</h1>
+      </header>
+      <p>
+        A while statement executes its statements as long as a specified condition evaluates to true.
+        If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.  
+      </p>
+      <p>
+        The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. 
+        If the condition returns false, execution stops and control is passed to the statement following while.
+      </p>
+      <div class="code-block">
+        <code>
+          i = 0 <br><br>
+          whiile i < 6: <br>
+          <span>print(i)</span><br>
+          i = i + 1  
+        </code>
+      </div>
+      <p>
+        The code above assigns the value 0 to the variable 'i' then creates a while loop which will print it's value and increment it
+        as long as 'i' is less than 6. When 'i' finally becomes 6 then the program will exit the while loop. <br><br>
+        <strong>Note the while loop will run endlessly if the condition is never met in this case if 'i' never increments above 6.</strong>
+      </p>
+    </section>
+    <section id="Functions">
+      <header>
+        <h1>Functions</h1>
+      </header>
+      <p>
+        A function is a block of organized, reusable code that is used to perform a single, related action when called. 
+        Functions provide better modularity for your application and a high degree of code reusing.
+      </p>
+      <div class="code-block">
+        <code>
+          def square(x):<br>
+          """"Returns the square of a given variable"""<br>
+          <span>return x*x</span><br>
+        </code>
+      </div>
+      <p>
+        The above block of code shows the basic layout of a python function. It first defines the function with 'def' followed by
+        the function name and its parameter. It then provides a brief description of the function purporse and then the block of code 
+        to be executed. When called a value will be passed into the function for example 2 and its square will be returned which
+        will be 4.      
+      </p>
+    </section>
+    <section id="Reference">
+      <header>
+        <h1>Reference</h1>
+      </header>
+      <p>
+        A more indepth tutorial can be found on the official <a href="https://docs.python.org/3/tutorial/index.html">Python Documentation</a>. 
+      </p>
+    </section>
+  </main>
+<script src="scripts/index.js"></script>    
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #575655;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar header {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 25px;
+}
+
+.sidebar li {  
+    border-top: solid;
+    border-width: thin;
+}
+
+.sidebar a {
+    display: block;
+    color: #333333;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+main {
+  margin-left: 260px;
+  padding: 30px;
+}
+
+section {
+    font-size: 14px;
+}
+
+section h1 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+
+section p {
+    line-height: 1.5rem;
+    margin-left: 20px;
+}
+
+section li {
+    line-height: 1.5rem;
+    margin-left: 70px;
+}
+
+.code-block {
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    line-height: 1.5rem;
+}
+
+.code-block span {
+    margin-left: 12px;
+}
+
+#Reference a {
+    text-decoration: none;
+}
+
+#Reference a:hover {
+    color: aquamarine;
+}
+
+@media (min-width: 120px) and (max-width: 767px) {
+    .sidebar {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 365px;
+    }   
+
+    main {
+        margin-left: 0px;
+    }
+}
+
+
